@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            height: 33px;
+            font-family: FZLTCXHJW--GB1-0;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            line-height: 20px;
+            letter-spacing: 0px;
+            color: #4e4e4e;
+        }
+        div::before {
+            content: "吓人";
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color:aqua;
+        }
+        /* content 属性  如果没有 伪元素选择器就不生效 */
+        div::after {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color:burlywood ;
+            content: "不知道";
+        }
+    </style>
+</head>
+<body>
+    <div>生成了一段文字！</div>
+</body>
+</html>
