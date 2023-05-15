@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动-产品布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        .product {
+            margin: 50px auto;
+            width: 1226px;
+            height: 628px;
+            background-color: aquamarine;
+        }
+        .left {
+            float: left;
+            width: 234px;
+            height: 628px;
+            background-color: azure;
+
+        }
+
+
+        .right {
+            float: right;
+            width: 978px;
+            height: 628px;
+            background-color: beige;
+
+        }
+
+        .right li{
+            width: 234px;
+            margin-right: 14px;
+            margin-top: 14px;
+            height: 300px;
+            background-color: burlywood;
+            float: left;
+        }
+        /* 4 8  4n 去掉右侧！ */
+        .right li:nth-child(4n) {
+            margin-right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 版心   右边 8个产品---8个li -->
+    <div class = "product">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
